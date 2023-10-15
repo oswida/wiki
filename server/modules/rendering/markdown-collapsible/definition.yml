@@ -1,0 +1,8 @@
+key: markdownCollapsible
+title: Collapsible
+description: "Adds collapsibles via the HTML <details> and <summary> elements. Based on library: https://github.com/bioruebe/markdown-it-collapsible. Syntax +++ <visible_text> <eol> <hidden_text> <eol> +++"
+author: Oskar Świda
+icon: mdi-contain-start
+enabledDefault: true
+dependsOn: markdownCore
+props: {}
