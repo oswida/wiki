@@ -1,0 +1,18 @@
+key: markdownWikilinks
+title: Wikilinks
+description: "Renders Wikimedia-style links like [[uri|name]]. Based on library: https://github.com/jsepia/markdown-it-wikilinks"
+author: Oskar Świda
+icon: mdi-contain-start
+enabledDefault: true
+dependsOn: markdownCore
+props:
+  baseURL:
+    type: String
+    title: Base URL
+    hint: Base URL added to all wikilinks
+    default: "/"
+  uriSuffix:
+    type: String
+    title: URI suffix
+    hint: Append this suffix to every URL.
+    default: ''
