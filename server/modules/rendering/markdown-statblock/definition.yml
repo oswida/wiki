@@ -1,0 +1,8 @@
+key: markdownStatblock
+title: Statblock
+description: "Renders RPG stats blocks. For syntax and available statblocks look at:  "
+author: Oskar Świda
+icon: mdi-list-status
+enabledDefault: false
+dependsOn: markdownCore
+props: {}

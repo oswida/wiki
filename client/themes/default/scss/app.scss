@@ -1287,3 +1287,95 @@
     display: none;
   }
 }
+
+// More css for modules
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  gap: 5px;
+}
+
+.flex-center-row {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+ }
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.statblock-attr-value {
+  font-size: 1.4em;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 25%;
+  min-width: calc(2rem + 20px);
+}
+
+.statblock-square-value {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  min-width: calc(2rem + 20px);
+}
+
+.statblock-circle-value {
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 50%;
+  min-width: calc(2rem + 10px);
+  min-height: calc(2rem + 10px);
+}
+
+.statblock-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 8px 0 0 0;
+  color: mc('grey', '700');
+  position: relative;
+
+  @at-root .theme--dark & {
+    color: mc('grey', '600');
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, mc('grey', '500'), rgba(mc('grey', '500'), 0) 100%);
+  }
+}
